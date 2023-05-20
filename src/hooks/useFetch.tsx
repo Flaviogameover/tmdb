@@ -74,22 +74,22 @@ const useFetch = (par: IFetcher) => {
 		}
 
 		if (url.media === 'similar') {
-			const { page, title_id, pid, adult } = params;
+			const { page, title_id, adult } = params;
 			return {
 				url: `/${url.type}/${title_id}/similar`,
 				params: {
-					page: params.page || 1,
+					page: page || 1,
 					include_adult: adult,
 				},
 			};
 		}
 
 		if (url.media === 'recommendations') {
-			const { page, title_id, pid, adult } = params;
+			const { page, title_id, adult } = params;
 			return {
 				url: `/${url.type}/${title_id}/recommendations`,
 				params: {
-					page: params.page || 1,
+					page: page || 1,
 					include_adult: adult,
 				},
 			};
