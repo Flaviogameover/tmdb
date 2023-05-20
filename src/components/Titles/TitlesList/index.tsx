@@ -51,7 +51,7 @@ const TitlesList: React.FC<TTitlesList> = ({ arr, type_list }) => {
 				p={5}
 				gap={10}
 				flexWrap={'wrap'}
-				justify={{ base: 'center', xl: 'space-between' }}
+				justify="center"
 				align={'flex-start'}
 				margin={'0 auto'}
 			>

@@ -42,6 +42,7 @@ const LoginModal: React.FC<TLoginModal> = ({ setAuthModalState }) => {
 				<ModalBody pb={4}>
 					<Stack spacing={3}>
 						<Input
+							autoComplete="email"
 							bg={'gray.700'}
 							variant="filled"
 							placeholder="Email"
@@ -69,6 +70,7 @@ const LoginModal: React.FC<TLoginModal> = ({ setAuthModalState }) => {
 							placeholder="Password"
 							type="password"
 							name="password"
+							autoComplete="current-password"
 							_hover={{
 								bg: 'gray.700',
 							}}

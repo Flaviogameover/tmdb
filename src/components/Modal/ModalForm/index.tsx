@@ -112,6 +112,7 @@ const ModalForm: React.FC<TModalForm> = ({
 						placeholder="Password"
 						name="password"
 						type="password"
+						autoComplete="new-password"
 						value={form.password}
 						onChange={(e) =>
 							setForm({
@@ -124,6 +125,7 @@ const ModalForm: React.FC<TModalForm> = ({
 						placeholder="Confirm Password"
 						name={'confirmPassword'}
 						type="password"
+						autoComplete="new-password"
 						value={form.confirmPassword}
 						onChange={(e) =>
 							setForm({

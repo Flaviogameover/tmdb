@@ -81,6 +81,7 @@ const SignUpModal: React.FC<TSignUpModal> = ({ setAuthModalState }) => {
 				<ModalBody pb={6}>
 					<Stack spacing={3}>
 						<Input
+							autoComplete='username'
 							bg={'gray.700'}
 							variant="filled"
 							_hover={{
@@ -103,6 +104,7 @@ const SignUpModal: React.FC<TSignUpModal> = ({ setAuthModalState }) => {
 							value={signForm.username}
 						/>
 						<Input
+							autoComplete='email'
 							bg={'gray.700'}
 							variant="filled"
 							_hover={{
@@ -139,6 +141,7 @@ const SignUpModal: React.FC<TSignUpModal> = ({ setAuthModalState }) => {
 							placeholder="Password"
 							type="password"
 							name="password"
+							autoComplete="new-password"
 							onChange={(e) =>
 								setSignForm({
 									...signForm,
@@ -161,6 +164,7 @@ const SignUpModal: React.FC<TSignUpModal> = ({ setAuthModalState }) => {
 							}}
 							placeholder="Confirm Password"
 							name="confirmPassword"
+							autoComplete="new-password"
 							type="password"
 							onChange={(e) =>
 								setSignForm({
