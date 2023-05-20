@@ -1,0 +1,25 @@
+$color_1: var(--brand-primary);
+$background-color_1: rgba(var(--background-site-rgb-value), 0.85);
+
+.embla {
+	--slide-spacing: 1rem;
+	--slide-size: 100%;
+    width: 100%;
+	--slide-height: 19rem;
+}
+.embla__viewport {
+    width: 100%;
+	overflow: hidden;
+	padding-right: calc(var(--slide-spacing) * -1);
+}
+.embla__container {
+    width: 100%;
+	display: flex;
+	flex-direction: row;
+	height: auto;
+}
+.embla__slide {
+    width: 100%;
+	flex: 0 0 var(--slide-size);
+	position: relative;
+}
